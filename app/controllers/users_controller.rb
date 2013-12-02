@@ -19,6 +19,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    
+    UserMailer.welcome_email(@user).deliver
+    logger.info("*********************************")
+
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to the Sample App!"
