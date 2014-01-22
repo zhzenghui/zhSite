@@ -1,0 +1,15 @@
+defaults: &defaults
+  app_name: "Ruby China"
+  foot_html: "&copy; Ruby China."
+  domain: "127.0.0.1:3000"
+  domain_signup: "http://0.0.0.0:3000/signup"
+  
+
+development:
+  <<: *defaults
+  neat_setting: 800
+
+test:
+  <<: *defaults
+
+production:

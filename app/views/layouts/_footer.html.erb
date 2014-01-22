@@ -1,13 +1,14 @@
 <footer class="footer">
-  <small>
-    <a href="http://railstutorial.org/">Rails Tutorial</a>
-    by Michael Hartl
+  <small>  <%= link_to image_tag("logo-48.png", alt: ""), '' %>
+
+    <a href="http://railstutorial.org/">我的计划</a>
+   	由 chris zeng 创建
   </small>
   <nav>
     <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
+      <li><%= link_to "关于我们",   about_path %></li>
+      <li><%= link_to "联系我们", contact_path %></li>
+      <li><a href="http://news.railstutorial.org/">新闻</a></li>
     </ul>
   </nav>
 </footer>
