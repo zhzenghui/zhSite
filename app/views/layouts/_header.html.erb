@@ -9,15 +9,15 @@
           </button>
 	        <ul class="nav navbar-nav navbar">
 	          <li><%= link_to image_tag("logo-18.png", alt: "Rails"), 'http://rubyonrails.org/'%>  </li>
-	          <li>	<%= link_to "计划", root_path , class:'navbar-brand' %></li>
+	          <li>	<%= link_to t(:site_name), root_path , class:'navbar-brand' %></li>
      
 	        </ul>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-	          <li class="active" ><%= link_to "主页", root_path %></li>
-	          <li><%= link_to "产品", root_path %></li>
-	          <li><%= link_to "帮助", help_path %></li>
+	          <li class="active" ><%= link_to t(:home), root_path %></li>
+	          <li><%= link_to t(:product), root_path %></li>
+	          <li><%= link_to t(:help), help_path %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 

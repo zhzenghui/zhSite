@@ -14,3 +14,10 @@ by [Michael Hartl](http://michaelhartl.com/). You can use this reference impleme
     $ bundle exec rspec spec/
 
 If the tests don't pass, it means there may be something wrong with your system. If they do pass, then you can debug your code by comparing it with the reference implementation.
+
+
+
+	sign_in: "登录"
+	sign_up_now: "现在注册"
+	forgot_password: "忘记密码"
+	reset_password: "重置密码"
